@@ -1,0 +1,1956 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#19ef4b;
+    --black:#141215;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--black);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--main-color);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    background:#fff;
+    font-weight: 500;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--main-color);
+    color:#fff;
+    letter-spacing: .1rem;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: rgba(0,0,0,.3);
+    padding:3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color:#fff;
+    font-weight: bolder;
+}
+
+.header .logo i{
+    padding-right: .5rem;
+    color:var(--main-color);
+    animation: floating 3s linear infinite;
+    margin-top: -10rem
+
+}
+
+.header .logo i img {
+    position: relative;
+    width: 40px;
+    margin: -1rem;
+    top: 1rem;
+    left: -1rem;
+}
+
+.header .logo i p {
+    font-size: 10;
+    position: absolute;
+    left: 3rem;
+    bottom: -1rem;
+    color: #fff;
+}
+
+@keyframes floating{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color:#fff;
+    margin:0 1rem;
+    position: relative;
+    left: 10rem;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+.header .icons a,
+.header .icons div{
+    font-size: 2.5rem;
+    color:#fff;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top:115%; right:-105%;
+    background: #fff;
+    width:50rem;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.header .search-form.active{
+    right:2rem;
+    opacity: 1;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    width:100%;
+    padding:0 1.5rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+
+.header.active{
+    padding:2rem 9%;
+    background: #222;
+}
+/*main section web-dev*/
+
+.product .product-name h1 {
+    color: #fff;
+    font-size: 45px;
+    position: absolute;
+    top: 15rem;
+    left: 55rem;
+}
+
+.product .product-name h1 span {
+    color: #19ef4b;
+}
+
+.product .web-dev img {
+    position: absolute;
+    top: 30rem;
+    left: 10rem;
+}
+
+.product .web-dev2 img {
+    position: absolute;
+    top: 30rem;
+    left: 52.5rem;
+}
+
+.product .web-dev3 img {
+    position: absolute;
+    top: 30rem;
+    left: 95rem;
+}
+
+.product .web-dev4 img {
+    position: absolute;
+    top: 102rem;
+    left: 10rem;
+}
+
+.product .web-dev5 img {
+    position: absolute;
+    top: 102rem;
+    left: 52.5rem;
+}
+
+.product .web-dev6 img {
+    position: absolute;
+    top: 102rem;
+    left: 95rem;
+}
+
+.product .product-title img {
+    width: 25px;
+    position: absolute;
+    top: 38.4rem;
+    left: 19rem;
+}
+
+.product .product-title h1 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 32rem;
+    left: 23rem;
+}
+
+.product .product-title h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 35rem;
+    left: 22rem;
+}
+
+.product .product-title h3 {
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    top: 38rem;
+    left: 23rem;
+}
+
+.product .product-title2 img {
+    width: 25px;
+    position: absolute;
+    top: 38.4rem;
+    left: 61rem;
+}
+
+.product .product-title2 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 32rem;
+    left: 66rem;
+}
+
+.product .product-title2 h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 35rem;
+    left: 64rem;
+}
+
+.product .product-title2 h3 {
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    top: 38rem;
+    left: 65rem;
+}
+
+.product .product-title3 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 32rem;
+    left: 108.6rem;
+}
+
+.product .product-title3 h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 35rem;
+    left: 106rem;
+}
+
+.product .product-title3 h3 {
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    top: 38rem;
+    left: 107rem;
+}
+
+.product .product-title3 img {
+    width: 25px;
+    position: absolute;
+    top: 38.4rem;
+    left: 102.5rem;
+}
+
+.product .product-title4 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 104rem;
+    left: 20rem;
+}
+
+.product .product-title4 h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 107rem;
+    left: 18.5rem;
+}
+
+.product .product-title4 h3 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 110rem;
+    left: 22rem;
+}
+
+.product .product-title4 img {
+    width: 25px;
+    position: absolute;
+    top: 110.5rem;
+    left: 18rem;
+}
+
+.product .product-title5 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 104rem;
+    left: 66.5rem;
+}
+
+.product .product-title5 h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 107rem;
+    left: 63rem;
+}
+
+.product .product-title5 h3 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 110rem;
+    left: 65rem;
+}
+
+.product .product-title5 img {
+    width: 25px;
+    position: absolute;
+    top: 110.5rem;
+    left: 61rem;
+}
+
+.product .product-title6 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 104rem;
+    left: 105rem;
+}
+
+.product .product-title6 h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 107rem;
+    left: 106rem;
+}
+
+.product .product-title6 h3 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 110rem;
+    left: 108.5rem;
+}
+
+.product .product-title6 img {
+    width: 25px;
+    position: absolute;
+    top: 110.5rem;
+    left: 104.2rem;
+}
+
+.product .product-icon .icon1 img {
+    width: 20px;
+    position: absolute;
+    top: 43rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon2 img {
+    width: 20px;
+    position: absolute;
+    top: 46.3rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon3 img {
+    width: 20px;
+    position: absolute;
+    top: 49.5rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon4 img {
+    width: 20px;
+    position: absolute;
+    top: 52.7rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon5 img {
+    width: 20px;
+    position: absolute;
+    top: 56rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon6 img {
+    width: 20px;
+    position: absolute;
+    top: 59.4rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon7 img {
+    width: 20px;
+    position: absolute;
+    top: 62.8rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon8 img {
+    width: 20px;
+    position: absolute;
+    top: 66.4rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon9 img {
+    width: 20px;
+    position: absolute;
+    top: 69.9rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon10 img {
+    width: 20px;
+    position: absolute;
+    top: 73.4rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon11 img {
+    width: 20px;
+    position: absolute;
+    top: 76.9rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon12 img {
+    width: 20px;
+    position: absolute;
+    top: 80.4rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon13 img {
+    width: 20px;
+    position: absolute;
+    top: 83.8rem;
+    left: 15rem;
+}
+
+.product .product-icon .icon14 img {
+    width: 20px;
+    position: absolute;
+    top: 87.1rem;
+    left: 15rem;
+}
+
+.product .product-icon2 .icon1 img {
+    width: 20px;
+    position: absolute;
+    top: 43rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon2 img {
+    width: 20px;
+    position: absolute;
+    top: 46.4rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon3 img {
+    width: 20px;
+    position: absolute;
+    top: 49.7rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon4 img {
+    width: 20px;
+    position: absolute;
+    top: 52.9rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon5 img {
+    width: 20px;
+    position: absolute;
+    top: 56.2rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon6 img {
+    width: 20px;
+    position: absolute;
+    top: 59.5rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon7 img {
+    width: 20px;
+    position: absolute;
+    top: 62.7rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon8 img {
+    width: 20px;
+    position: absolute;
+    top: 66.1rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon9 img {
+    width: 20px;
+    position: absolute;
+    top: 69.4rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon10 img {
+    width: 20px;
+    position: absolute;
+    top: 72.7rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon11 img {
+    width: 20px;
+    position: absolute;
+    top: 76rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon12 img {
+    width: 20px;
+    position: absolute;
+    top: 79.4rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon13 img {
+    width: 20px;
+    position: absolute;
+    top: 82.7rem;
+    left: 57rem;
+}
+
+.product .product-icon2 .icon14 img {
+    width: 20px;
+    position: absolute;
+    top: 86.1rem;
+    left: 57rem;
+}
+
+.product .product-icon3 .icon1 img {
+    width: 20px;
+    position: absolute;
+    top: 43rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon2 img {
+    width: 20px;
+    position: absolute;
+    top: 46.4rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon3 img {
+    width: 20px;
+    position: absolute;
+    top: 49.8rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon4 img {
+    width: 20px;
+    position: absolute;
+    top: 53.2rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon5 img {
+    width: 20px;
+    position: absolute;
+    top: 56.6rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon6 img {
+    width: 20px;
+    position: absolute;
+    top: 60.2rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon7 img {
+    width: 20px;
+    position: absolute;
+    top: 63.6rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon8 img {
+    width: 20px;
+    position: absolute;
+    top: 67rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon9 img {
+    width: 20px;
+    position: absolute;
+    top: 70.5rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon10 img {
+    width: 20px;
+    position: absolute;
+    top: 73.8rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon11 img {
+    width: 20px;
+    position: absolute;
+    top: 73.8rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon12 img {
+    width: 20px;
+    position: absolute;
+    top: 77rem;
+    left: 99.7rem;
+}
+
+.product  .product-icon3 .icon13 img {
+    width: 20px;
+    position: absolute;
+    top: 80.5rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon14 img {
+    width: 20px;
+    position: absolute;
+    top: 83.8rem;
+    left: 99.7rem;
+}
+
+.product .product-icon3 .icon15 img {
+    width: 20px;
+    position: absolute;
+    top: 87.2rem;
+    left: 99.7rem;
+}
+
+.product .product-icon4 .icon1 img {
+    width: 20px;
+    position: absolute;
+    top: 115.3rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon2 img {
+    width: 20px;
+    position: absolute;
+    top: 119rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon3 img {
+    width: 20px;
+    position: absolute;
+    top: 122.8rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon4 img {
+    width: 20px;
+    position: absolute;
+    top: 126.3rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon5 img {
+    width: 20px;
+    position: absolute;
+    top: 129.7rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon6 img {
+    width: 20px;
+    position: absolute;
+    top: 132.8rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon7 img {
+    width: 20px;
+    position: absolute;
+    top: 136.1rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon8 img {
+    width: 20px;
+    position: absolute;
+    top: 139.4rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon9 img {
+    width: 20px;
+    position: absolute;
+    top: 142.6rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon10 img {
+    width: 20px;
+    position: absolute;
+    top: 145.8rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon11 img {
+    width: 20px;
+    position: absolute;
+    top: 149rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon12 img {
+    width: 20px;
+    position: absolute;
+    top: 152.3rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon13 img {
+    width: 20px;
+    position: absolute;
+    top: 155.8rem;
+    left: 15rem;
+}
+
+.product .product-icon4 .icon14 img {
+    width: 20px;
+    position: absolute;
+    top: 159.3rem;
+    left: 15rem;
+}
+
+.product .product-icon5 .icon1 img {
+    width: 20px;
+    position: absolute;
+    top: 115.3rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon2 img {
+    width: 20px;
+    position: absolute;
+    top: 119rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon3 img {
+    width: 20px;
+    position: absolute;
+    top: 122.8rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon4 img {
+    width: 20px;
+    position: absolute;
+    top: 126.3rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon5 img {
+    width: 20px;
+    position: absolute;
+    top: 129.7rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon6 img {
+    width: 20px;
+    position: absolute;
+    top: 132.8rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon7 img {
+    width: 20px;
+    position: absolute;
+    top: 136.1rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon8 img {
+    width: 20px;
+    position: absolute;
+    top: 139.4rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon9 img {
+    width: 20px;
+    position: absolute;
+    top: 142.6rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon10 img {
+    width: 20px;
+    position: absolute;
+    top: 145.8rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon11 img {
+    width: 20px;
+    position: absolute;
+    top: 149rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon12 img {
+    width: 20px;
+    position: absolute;
+    top: 152.3rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon13 img {
+    width: 20px;
+    position: absolute;
+    top: 155.8rem;
+    left: 58rem;
+}
+
+.product .product-icon5 .icon14 img {
+    width: 20px;
+    position: absolute;
+    top: 159.3rem;
+    left: 58rem;
+}
+
+.product .product-icon6 .icon1 img {
+    width: 20px;
+    position: absolute;
+    top: 115.3rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon2 img {
+    width: 20px;
+    position: absolute;
+    top: 119rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon3 img {
+    width: 20px;
+    position: absolute;
+    top: 122.8rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon4 img {
+    width: 20px;
+    position: absolute;
+    top: 126.3rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon5 img {
+    width: 20px;
+    position: absolute;
+    top: 129.7rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon6 img {
+    width: 20px;
+    position: absolute;
+    top: 132.8rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon7 img {
+    width: 20px;
+    position: absolute;
+    top: 136.1rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon8 img {
+    width: 20px;
+    position: absolute;
+    top: 139.4rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon9 img {
+    width: 20px;
+    position: absolute;
+    top: 142.6rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon10 img {
+    width: 20px;
+    position: absolute;
+    top: 145.8rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon11 img {
+    width: 20px;
+    position: absolute;
+    top: 149rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon12 img {
+    width: 20px;
+    position: absolute;
+    top: 152.3rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon13 img {
+    width: 20px;
+    position: absolute;
+    top: 155.8rem;
+    left: 102rem;
+}
+
+.product .product-icon6 .icon14 img {
+    width: 20px;
+    position: absolute;
+    top: 159.3rem;
+    left: 102rem;
+}
+
+.product .product-detail1 .free-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 42.8rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .free-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 46rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .free-sertifikat p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 49.2rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .free-konsultasi p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 52.4rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .free-banner p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 55.6rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .free-email p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 59rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .design-responsive p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 62.5rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .seo-friendly p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 66rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .web-page p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 69.6rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .wa-button p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 73.1rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .dua-revisions p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 76.6rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .satu-year-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 80rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .satu-year-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 83.5rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .blog-system p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 86.9rem;
+    left: 20.5rem;
+}
+
+.product .product-detail1 .btn-contact a {
+    position: absolute;
+    top: 21rem;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.product .product-detail1 .btn-order a {
+    position: absolute;
+    top: 21rem;
+    border-radius: 5px;
+    left: 113rem;
+    font-weight: 800;
+}
+
+.product .product-detail2 .free-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 42.8rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .free-sertifikat p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 49.3rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .free-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 46rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .free-konsultasi p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 52.7rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .free-banner  p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 55.9rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .free-email p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 59.1rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .design-responsive p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 62.2rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .seo-friendly p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 65.7rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .web-page p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 69rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .wa-button p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 72.4rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .tiga-revisions p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 75.7rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .satu-year-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 79rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .satu-year-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 82.4rem;
+    left: 63rem;
+}
+
+.product .product-detail2 .blog-system p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 85.7rem;
+    left: 63rem;
+}
+
+.product .product-detail3 .free-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 42.8rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .free-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 46.1rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .free-sertifikat p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 49.4rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .free-konsultasi p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 52.8rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .free-banner p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 56.3rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .free-email p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 59.7rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .design-responsive p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 63rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .seo-friendly p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 66.6rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .web-page p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 70rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .wa-button p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 73.5rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .empat-revisions p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 76.9rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .satu-year-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 80.3rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .satu-year-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 83.6rem;
+    left: 105.5rem;
+}
+
+.product .product-detail3 .blog-system p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 86.9rem;
+    left: 105.5rem;
+}
+
+.product .product-detail4 .free-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 115rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .free-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 118.7rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .free-sertifikat p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 122.3rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .free-konsultasi p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 126rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .free-banner p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 129.4rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .free-email p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 132.7rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .design-responsive p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 135.9rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .seo-friendly p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 139.3rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .order-via-wa p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 142.5rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .auto-order p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 145.7rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .dua-revisions p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 149rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .satu-year-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 156rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .satu-year-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 152.5rem;
+    left: 20.5rem;
+}
+
+.product .product-detail4 .e-commerce-system p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 159.2rem;
+    left: 20.5rem;
+}
+
+.product .product-detail5 .free-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 115rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .free-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 118.7rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .free-sertifikat p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 122.3rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .free-konsultasi p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 126rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .free-banner p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 129.4rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .free-email p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 132.7rem;
+    left: 63.5rem;
+}
+.product .product-detail5 .design-responsive p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 135.9rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .seo-friendly p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 139.3rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .dashboard-writing p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 142.5rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .optimization-of-media p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 145.7rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .dua-revisions p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 149rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .satu-year-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 156rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .satu-year-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 152.5rem;
+    left: 63.5rem;
+}
+
+.product .product-detail5 .blog-system p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 159.2rem;
+    left: 63.5rem;
+}
+
+.product .product-detail6 .free-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 115rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .free-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 118.7rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .free-sertifikat p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 122.3rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .free-konsultasi p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 126rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .free-banner p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 129.4rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .free-email p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 132.7rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .design-responsive p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 135.9rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .seo-friendly p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 139.3rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .calculate-shipping-cost p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 142.5rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .payment-gateway p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 145.7rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .dua-revisions p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 149rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .satu-year-domain p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 156rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .satu-year-hosting p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 152.5rem;
+    left: 107rem;
+}
+
+.product .product-detail6 .e-commerce-system p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 159.2rem;
+    left: 107rem;
+}
+/*footer-me*/
+
+.footer-me .footer-bg img {
+    width: 100%;
+    position: absolute;
+    top: 175rem;
+    left: 0rem;
+}
+
+.footer-me .logo-mjs img {
+    width: 3%;
+    position: absolute;
+    top: 180rem;
+    left: 2rem;
+}
+
+.footer-me .logo-mjs h2 {
+    color: #222;
+    position: absolute;
+    top: 180rem;
+    font-size: 30px;
+    left: 7rem;
+}
+
+.footer-me .logo-mjs h3 {
+    color: #222;
+    position: absolute;
+    top: 201rem;
+    font-size: 20px;
+    left: 53rem;
+}
+
+.footer-me .logo-mjs h4 {
+    color: #222;
+    position: absolute;
+    top: 179rem;
+    font-size: 25px;
+    left: 70rem;
+}
+
+.footer-me .logo-mjs p {
+    color: #222;
+    position: absolute;
+    top: 187rem;
+    font-size: 15px;
+    width: 30%;
+    left: 2rem;
+    font-weight: 600;
+}
+
+.footer-me .logo-mjs .icon-drive img {
+    position: absolute;
+    top: 200rem;
+}
+
+.footer-me  .logo-mjs .icon-github img {
+    position: absolute;
+    top: 200rem;
+    left: 7rem;
+}
+
+.footer-me .logo-mjs .icon-ig img {
+    position: absolute;
+    top: 200rem;
+    left: 12rem;
+}
+
+.footer-me .logo-mjs .icon-in img {
+    position: absolute;
+    top: 200rem;
+    left: 17rem;
+}
+
+.footer-me .logo-mjs .icon-wa img {
+    position: absolute;
+    top: 200rem;
+    left: 22rem;
+}
+
+.footer-me .logo-mjs .icon-call img {
+    position: absolute;
+    top: 185rem;
+    width: 2%;
+    left: 70rem;
+}
+
+.footer-me .logo-mjs .icon-mail img {
+    position: absolute;
+    top: 189rem;
+    width: 2%;
+    left: 70rem;
+}
+
+.footer-me .logo-mjs .icon-map img {
+    position: absolute;
+    top: 192rem;
+    width: 2%;
+    left: 70rem;
+}
+
+.footer-me .contact-us h1 {
+    color: #222;
+    position: absolute;
+    top: 185rem;
+    left: 74rem;
+}
+
+.footer-me .contact-us h2 {
+    color: #222;
+    position: absolute;
+    top: 188.7rem;
+    left: 74rem;
+    font-size: 15px;
+}
+
+.footer-me .contact-us h3 {
+    color: #222;
+    position: absolute;
+    top: 192.5rem;
+    left: 74rem;
+    font-size: 15px;
+}
+
+/* Tambahkan di bagian atas file CSS */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  #loader img {
+    width: 60px;
+    margin-bottom: 0px;
+    animation: pulse 1s infinite;
+    top: 0rem;
+    position: relative;
+  }
+  
+  .loading-spinner {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #fff;
+    border-top: 10px solid #19ef4b;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    .header.active{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background:#222;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin:2rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .home .home-slider .swiper-button-next,
+    .home .home-slider .swiper-button-prev{
+        display: none;
+    }
+
+}
+
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}

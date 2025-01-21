@@ -1,0 +1,795 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --main-color: #19ef4b;
+  --black: #141215;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.heading span {
+  color: var(--main-color);
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  background: #fff;
+  font-weight: 500;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+  animation: floating 3s linear infinite;
+  margin-top: -10rem;
+}
+
+.header .logo i img {
+  position: relative;
+  width: 40px;
+  margin: -1rem;
+  top: 1rem;
+  left: -1rem;
+}
+
+.header .logo i p {
+  font-size: 10;
+  position: absolute;
+  left: 3rem;
+  bottom: -1rem;
+  color: #fff;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #fff;
+  margin: 0 1rem;
+  position: relative;
+  left: 10rem;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: var(--main-color);
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+
+.header .search-form.active {
+  right: 2rem;
+  opacity: 1;
+  transition: 0.4s linear;
+}
+
+.header .search-form input {
+  width: 100%;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.header .search-form label {
+  font-size: 2.5rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .search-form label:hover {
+  color: var(--main-color);
+}
+
+.header.active {
+  padding: 2rem 9%;
+  background: #222;
+}
+
+.about-maulanajs .about-mjs h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 45px;
+  top: 20rem;
+  left: 56rem;
+}
+
+.about-maulanajs .about-mjs h2 span {
+  color: #19ef4b;
+}
+
+.about-maulanajs .about-mjs h3 {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60rem;
+  left: 60rem;
+}
+
+.about-maulanajs .about-mjs p {
+  color: #fff;
+  position: absolute;
+  top: 66rem;
+  text-align: center;
+  font-size: 15px;
+  left: 50rem;
+}
+
+.about-maulanajs .about-mjs img {
+  width: 25px;
+  position: absolute;
+  top: 61.3rem;
+  left: 95rem;
+}
+
+.about-maulanajs .text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  top: 73rem;
+  width: 50%;
+  left: 39rem;
+}
+
+.about-maulanajs .text h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  top: 81rem;
+  width: 50%;
+  left: 39rem;
+}
+
+.about-maulanajs .text h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  top: 86.8rem;
+  width: 50%;
+  left: 39rem;
+}
+
+.about-maulanajs .text a {
+  color: #fff;
+  position: absolute;
+  top: 91rem;
+  left: 72rem;
+  border-radius: 5px;
+}
+
+.about-maulanajs .text a p {
+  color: #000;
+  font-weight: 800;
+}
+
+.about-maulanajs .icon-logo img {
+  width: 15%;
+  position: absolute;
+  top: 35rem;
+  left: 66rem;
+}
+
+/*Why Maulanajs? start*/
+.why-maulanajs .why-mjs .konten-why .judul h1 {
+  position: absolute;
+  color: #fff;
+  font-size: 45px;
+  top: 106rem;
+  left: 57rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .judul h1 span {
+  color: #19ef4b;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak1 .kolom img {
+  position: absolute;
+  top: 120rem;
+  left: 20rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .bintang img {
+  position: absolute;
+  top: 125.5rem;
+  left: 22rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak1 h1 {
+  color: #fff;
+  position: absolute;
+  top: 125rem;
+  font-size: 18px;
+  left: 26rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak1 p {
+  color: #fff;
+  position: absolute;
+  top: 133rem;
+  font-size: 19px;
+  width: 13%;
+  left: 23rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak2 h1 {
+  color: #fff;
+  position: absolute;
+  top: 125rem;
+  font-size: 18px;
+  left: 55rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak2 .diamon img {
+  position: absolute;
+  top: 125.5rem;
+  left: 51rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak2 p {
+  color: #fff;
+  position: absolute;
+  top: 133rem;
+  font-size: 19px;
+  width: 13%;
+  left: 53rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak2 .kolom img {
+  position: absolute;
+  top: 120rem;
+  left: 49rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak3 h1 {
+  color: #fff;
+  position: absolute;
+  top: 125rem;
+  font-size: 18px;
+  left: 84rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak3 p {
+  color: #fff;
+  position: absolute;
+  top: 133rem;
+  font-size: 19px;
+  width: 13%;
+  left: 81rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak3 .wallet img {
+  position: absolute;
+  top: 125.5rem;
+  left: 80rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak3 .kolom img {
+  position: absolute;
+  top: 120rem;
+  left: 78rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak4 h1 {
+  color: #fff;
+  position: absolute;
+  top: 125rem;
+  font-size: 18px;
+  left: 113rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak4 .user img {
+  position: absolute;
+  top: 125.5rem;
+  left: 109rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak4 p {
+  color: #fff;
+  position: absolute;
+  top: 133rem;
+  font-size: 19px;
+  width: 13%;
+  left: 110rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak4 .kolom img {
+  position: absolute;
+  top: 120rem;
+  left: 107rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak5 h1 {
+  color: #fff;
+  position: absolute;
+  top: 165rem;
+  font-size: 18px;
+  left: 26.5rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak5 p {
+  color: #fff;
+  position: absolute;
+  top: 173rem;
+  font-size: 19px;
+  width: 13%;
+  left: 23rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak5 .seacrh img {
+  position: absolute;
+  top: 165.5rem;
+  left: 22rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak5 .kolom img {
+  position: absolute;
+  top: 160rem;
+  left: 20rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak6 h1 {
+  color: #fff;
+  position: absolute;
+  top: 165rem;
+  font-size: 18px;
+  left: 54.5rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak6 p {
+  color: #fff;
+  position: absolute;
+  top: 173rem;
+  font-size: 19px;
+  width: 13%;
+  left: 53rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak6 .dg img {
+  position: absolute;
+  top: 165.5rem;
+  left: 50rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak6 .kolom img {
+  position: absolute;
+  top: 160rem;
+  left: 49rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak7 h1 {
+  color: #fff;
+  position: absolute;
+  top: 165rem;
+  font-size: 18px;
+  left: 83rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak7 p {
+  color: #fff;
+  position: absolute;
+  top: 173rem;
+  font-size: 19px;
+  width: 13%;
+  left: 81rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .diagram img {
+  position: absolute;
+  top: 165.5rem;
+  left: 79rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak7 .kolom img {
+  position: absolute;
+  top: 160rem;
+  left: 78rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak8 h1 {
+  color: #fff;
+  position: absolute;
+  top: 165rem;
+  font-size: 18px;
+  left: 113rem;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak8 p {
+  color: #fff;
+  position: absolute;
+  top: 173rem;
+  font-size: 19px;
+  width: 13%;
+  left: 110rem;
+  font-weight: 200;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak8 .dev img {
+  position: absolute;
+  top: 165.5rem;
+  left: 109rem;
+  width: 30px;
+}
+
+.why-maulanajs .why-mjs .konten-why .kotak8 .kolom img {
+  position: absolute;
+  top: 160rem;
+  left: 107rem;
+}
+/*Why Maulanajs? end*/
+
+/*footer-me*/
+
+.footer-me .footer-bg img {
+  width: 100%;
+  position: absolute;
+  top: 100rem;
+  left: 0rem;
+  margin-top: 120rem;
+}
+
+.footer-me .logo-mjs img {
+  width: 3%;
+  position: absolute;
+  top: 225rem;
+  left: 2rem;
+}
+
+.footer-me .logo-mjs h2 {
+  color: #222;
+  position: absolute;
+  top: 225rem;
+  font-size: 30px;
+  left: 7rem;
+}
+
+.footer-me .logo-mjs h3 {
+  color: #222;
+  position: absolute;
+  top: 247rem;
+  font-size: 20px;
+  left: 53rem;
+  font-weight: 500;
+}
+
+.footer-me .logo-mjs h4 {
+  color: #222;
+  position: absolute;
+  top: 225rem;
+  font-size: 25px;
+  left: 70rem;
+}
+
+.footer-me .logo-mjs p {
+  color: #222;
+  position: absolute;
+  top: 232rem;
+  font-size: 15px;
+  width: 30%;
+  left: 2rem;
+  font-weight: 600;
+}
+
+.footer-me .logo-mjs .icon-drive img {
+  position: absolute;
+  top: 247rem;
+}
+
+.footer-me .logo-mjs .icon-github img {
+  position: absolute;
+  top: 247rem;
+  left: 7rem;
+}
+
+.footer-me .logo-mjs .icon-ig img {
+  position: absolute;
+  top: 247rem;
+  left: 12rem;
+}
+
+.footer-me .logo-mjs .icon-in img {
+  position: absolute;
+  top: 247rem;
+  left: 17rem;
+}
+
+.footer-me .logo-mjs .icon-wa img {
+  position: absolute;
+  top: 247rem;
+  left: 22rem;
+}
+
+.footer-me .logo-mjs .icon-call img {
+  position: absolute;
+  top: 230rem;
+  width: 2%;
+  left: 70rem;
+}
+
+.footer-me .logo-mjs .icon-mail img {
+  position: absolute;
+  top: 235rem;
+  width: 2%;
+  left: 70rem;
+}
+
+.footer-me .logo-mjs .icon-map img {
+  position: absolute;
+  top: 240rem;
+  width: 2%;
+  left: 70rem;
+}
+
+.footer-me .contact-us h1 {
+  color: #222;
+  position: absolute;
+  top: 230rem;
+  left: 74rem;
+}
+
+.footer-me .contact-us h2 {
+  color: #222;
+  position: absolute;
+  top: 235rem;
+  left: 74rem;
+  font-size: 15px;
+}
+
+.footer-me .contact-us h3 {
+  color: #222;
+  position: absolute;
+  top: 240rem;
+  left: 74rem;
+  font-size: 15px;
+}
+
+/* Tambahkan di bagian atas file CSS */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+#loader img {
+  width: 60px;
+  margin-bottom: 0px;
+  animation: pulse 1s infinite;
+  top: 0rem;
+  position: relative;
+}
+
+.loading-spinner {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #fff;
+  border-top: 10px solid #19ef4b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .search-form {
+    width: 90%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #222;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .home-slider .swiper-button-next,
+  .home .home-slider .swiper-button-prev {
+    display: none;
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
